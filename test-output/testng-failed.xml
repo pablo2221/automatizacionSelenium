@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Pruebas fundamentos de automatizacion con Selenium]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Feature - Practice Form Page(failed)">
+  <test thread-count="5" name="Locators Ejemplos(failed)">
     <classes>
-      <class name="testCasesDefinition">
+      <class name="Locators">
         <methods>
-          <include name="liberarBrowser"/>
-          <include name="testCase1"/>
-          <include name="lanzarBrowser"/>
+          <include name="ejemplosLocators"/>
         </methods>
-      </class> <!-- testCasesDefinition -->
+      </class> <!-- Locators -->
     </classes>
-  </test> <!-- Feature - Practice Form Page(failed) -->
+  </test> <!-- Locators Ejemplos(failed) -->
 </suite> <!-- Failed suite [Pruebas fundamentos de automatizacion con Selenium] -->

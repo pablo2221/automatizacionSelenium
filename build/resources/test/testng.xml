@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Pruebas fundamentos de automatizacion con Selenium">
-    <test verbose="2" preserve-order="true" name="Feature - Practice Form Page">
+    <!--test verbose="2" preserve-order="true" name="Feature - Practice Form Page">
         <classes>
             <class name="testCasesDefinition">
                 <methods>
                     <include name="testCase1"/>
+                </methods>
+            </class>
+        </classes>
+    </test!-->
+    <test verbose="2" preserve-order="true" name="Locators Ejemplos">
+        <classes>
+            <class name="Locators">
+                <methods>
+                    <include name="ejemplosLocators"/>
                 </methods>
             </class>
         </classes>
