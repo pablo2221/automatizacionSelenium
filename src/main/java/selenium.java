@@ -133,21 +133,21 @@ public class selenium extends Util{
                 case "tagName":{listelements=this.webElement.findElements(By.tagName(listaElement));break;}
             }
 
-            for(WebElement elementoLista :listelements){
-                Util.imprimir("Revisando: "+elementoLista.getText());
-                if (elementoLista.getText().equals(buscarItem)){
-                    this.webElement=elementoLista;
-                    Util.imprimir("Item seleccionado:"+this.webElement.getText());
-                    found=true;
-                    break;
-                }
-            }
-            if (!found){
-                throw new RuntimeException("Web Element not found");
-            }
         }
         catch (Exception e){
             System.out.println("Web Element not found");
+        }
+        for(WebElement elementoLista :listelements){
+            Util.imprimir("Revisando: "+elementoLista.getText());
+            if (elementoLista.getText().equals(buscarItem)){
+                this.webElement=elementoLista;
+                Util.imprimir("Item seleccionado:"+this.webElement.getText());
+                found=true;
+                break;
+            }
+        }
+        if (!found){
+            throw new RuntimeException("Web Element not found");
         }
     }
 }

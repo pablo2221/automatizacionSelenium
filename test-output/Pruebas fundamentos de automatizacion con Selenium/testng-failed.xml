@@ -7,6 +7,7 @@
         <methods>
           <include name="liberarBrowser"/>
           <include name="testCase3"/>
+          <include name="SeleccionarEstado"/>
           <include name="lanzarBrowser"/>
         </methods>
       </class> <!-- testCasesDefinition -->

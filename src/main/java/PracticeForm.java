@@ -8,7 +8,13 @@ public class PracticeForm {
 
     private String practiceFormTitulo = "Student Registration Form";
     private String practiceFormTituloLocator = "Xpath";
-    private String practiceFormTituloElemento = "//div[@class=“practice-form-wrapper”]/h5";
+    private String practiceFormTituloElemento = "//div[@class=\"practice-form-wrapper\"]/h5";
+
+    private String estadoName = "Estado";
+    private String estadoElemento = "state";
+    private String estadoLocator = "Id";
+    private String estadoListaElemento = "div[idˆ=\"react\"]";
+    private String estadoListaLocator = "css";
 
     public String obtenerTituloPagina(){
         return selenium.obtenerTituloPagina();
@@ -50,5 +56,15 @@ public class PracticeForm {
     public String obtenerTexto(){
         return selenium.textoElement();
     }
+
+    public void seleccionarEstado(String estado){
+        selenium.initSeleniumList(estadoName, estadoLocator, estadoElemento, estadoListaElemento, estadoListaLocator, estado);
+        selenium.scrollWebElement();
+        Util.Wait(5);
+        selenium.findInList();
+        selenium.elementoClick();
+        Util.Wait(5);
+    }
+
 }
 

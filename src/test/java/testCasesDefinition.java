@@ -8,6 +8,7 @@ public class testCasesDefinition extends PruebaPaginaPracticeForm{
      String url = "https://demoqa.com/forms";
      String tituloPagina = "ToolsQA";
      String tituloForm = "Student Registration Form";
+     String estado = "NCR";
 
      @BeforeTest
      public void lanzarBrowser(){
@@ -32,6 +33,11 @@ public class testCasesDefinition extends PruebaPaginaPracticeForm{
         clickElemento();
         irPracticeFormTitulo();
         validarTituloForm(tituloForm);
+    }
+
+    @Test
+    public void SeleccionarEstado(){
+         escogerEstado(estado);
     }
 
      @AfterTest

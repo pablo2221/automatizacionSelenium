@@ -62,4 +62,9 @@ public class PruebaPaginaPracticeForm{
         testUtil.imprimir("Validar el titulo del form que sea igual a: "+tituloValidar);
         Assert.assertEquals(paginaPracticeForm.obtenerTexto(),tituloValidar,"Validation Point failed: El "+tituloValidar+ "no coincide con el esperado");
     }
+
+    public void escogerEstado(String estado){
+        paginaPracticeForm.seleccionarEstado(estado);
+
+    }
 }

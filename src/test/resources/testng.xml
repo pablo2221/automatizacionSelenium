@@ -8,6 +8,7 @@
                     <include name="testCase1"/>
                     <include name="testCase2"/>
                     <include name="testCase3"/>
+                    <include name="SeleccionarEstado"/>
                 </methods>
             </class>
         </classes>
